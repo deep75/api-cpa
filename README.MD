@@ -3,7 +3,7 @@ API CPA
 
 
 * Exécution directe : `docker run -d --name api-cpa -p 80:3004 mcas/api-cpa`
-* Construction : `docker build -t mcas/api-cpa . . docker run -d --name api-cpa -p 80:3004 mcas/api-cpa; `
+* Construction : `docker build -t mcas/api-cpa . ; docker run -d --name api-cpa -p 80:3004 mcas/api-cpa `
 
 Dépendance
 ----------
