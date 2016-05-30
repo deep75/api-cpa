@@ -3,7 +3,7 @@ API CPA
 
 
 * Exécution directe : `docker run -d --name api-cpa -p 80:3004 mcas/api-cpa`
-* Exemple de construction avec Docker : `git clone https://github.com/deep75/api-cpa` puis `docker build -t mcas/api-cpa . ` puis 
+* Exemple de construction avec Docker : `git clone https://github.com/deep75/api-cpa; cd api-cpa` puis `docker build -t mcas/api-cpa . ` puis 
                  `docker run -d --name api-cpa -p 80:3004 mcas/api-cpa `
 
 Dépendance
