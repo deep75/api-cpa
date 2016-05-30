@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Données globales de contexte et données identifiées</title>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Custom styles for this template -->
+  <link href="./css/carousel.css" rel="stylesheet">
+</head>
+<!-- NAVBAR
+================================================== -->
+<body>
+<div class="navbar-wrapper">
+  <div class="container">
+
+    <nav class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">API Compte Personnel d'Activité</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <!--<ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>-->
+        </div>
+      </div>
+    </nav>
+
+  </div>
+</div>
+
+
+<!-- Marketing messaging and featurettes
+================================================== -->
+<!-- Wrap the rest of the page in another container to center all the content. -->
+
+<div class="container marketing" style="margin-top: 100px;">
+
+
+  <a href="/" class="btn btn-default btn-lg">Retour</a>
+
+  <div class="page-header">
+    <h1>Données globales de contexte</h1>
+    Vous trouverez ici les références vers les bases de données Open Data ou sous licence ad hoc vous permettant d'appréhender au mieux la situation de l'emploi dans le contexte de vos usagers. Autant que le permet l'anonymisation des données, ces informations vous sont fournies à la maille la plus fine : embauches, offres, accidents du travail/maladies professionnelles, formations, etc.
+    <br/>
+    Les éléments d'appréciation dans la dernière colonne reflètent les demandes des participants du hackathon CPA@42.
+  </div>
+
+  <!-- START THE FEATURETTES -->
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Donnée</th>
+      <th>Organisme d'État</th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><A href="http://www.emploi-store-dev.fr/portail-developpeur/accueil">Répertoire opérationnel des métiers (ROME)</a></td>
+      <td>Pôle Emploi</td>
+      <td><span class="label label-success">OK</span></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.emploi-store-dev.fr/portail-developpeur/donneesdoctechnique">Suivi longitudinal des demandeurs inscrits à Pôle emploi sur 18 mois (STMT)</a></td>
+      <td>Pôle Emploi</td>
+      <td><span class="label label-warning">1/12e disponible sous contrat ad hoc, attendu avec jointure de fiabilité avec DPAE</span></td>
+    </tr>
+    <tr>
+      <td><a href="http://www.emploi-store-dev.fr/portail-developpeur/donneesdoctechnique">Informations sur le marché du travail (IMT)</a></td>
+      <td>Pôle Emploi</td>
+      <td><span class="label label-success">OK, maille ROM et bassin d'emploi (offres = 20% du marché)</span></td>
+    </tr>
+    <tr>
+      <td><A href="http://www.emploi-store-dev.fr/portail-developpeur/accueil">Base de données des offres d'emploi</a></td>
+      <td>Pôle Emploi</td>
+      <td><span class="label label-danger">Manque SIRET</span></td>
+    </tr>
+    <tr>
+      <td><a href="http://labonneformation.pole-emploi.fr/api/v1/api_hackathon_doc.html">Référentiel enrichi des formations CARIF/OREF (laBonneFormation)</a></td>
+      <td>Pôle Emploi</td>
+      <td><span class="label label-warning">Par API uniquement, attendu par Taux de Retour à l'emploi à 6, 12 mois et incluant PETITES formations</span></td>
+    </tr>
+    <tr>
+      <td><a href="http://labonneboite.pole-emploi.fr/api">Base de données des entreprises qui recrutent (laBonneBoite)</a></td>
+      <td>Pôle Emploi</td>
+      <td><span class="label label-warning">Par API uniquement, attendu avec le coefficient de probabilité d'embauche</span></td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/file/d/0B-urpDectBSwZHpSbU9UWWFvUXc/view">Base anonymisée des volontaires du service civique</a></td>
+      <td>GEPVA</td>
+      <td><span class="label label-warning">Par établissement agréé, mais sans dates ni durées</span></td>
+    </tr>
+    <tr>
+      <td><a href="https://drive.google.com/folderview?id=0B7v9_LMu9GbiUVJEaHlSNTFnaWM&usp=sharing&tid=0B7v9_LMu9GbiaHRpaGRYRmY5aUE#list">Bases de données d'utilisation du CPF</a></td>
+      <td>Caisse des dépôts</td>
+      <td><span class="label label-success">OK, par NIR anonymisé</span></td>
+    </tr>
+    <tr>
+      <td>Base de données d'utilisation du CPP</td>
+      <td>CNAV</td>
+      <td><span class="label label-danger">Non disponible, attendu par NIR anonymisé</span></td>
+    </tr>
+    <tr>
+      <td>Accidents du Travail/Maladies Professionnelles (AT/MP)</td>
+      <td>DARES</td>
+      <td><span class="label label-danger">Non disponible, attendu à la maille SIRET et ROME</span></td>
+    </tr>
+    <tr>
+      <td>Déclarations préalables à l'embauche anonymisées (DPAE)</td>
+      <td>ACOSS ou Pôle Emploi</td>
+      <td><span class="label label-danger">Non disponible, attentu par NIR anonymisé</span></td>
+    </tr>
+    </tbody>
+  </table>
+
+
+  <div class="page-header">
+    <h1>Données identifiées sécurisées</h1>
+    Vous trouverez ci-dessous la liste des données personnelles attendues par les équipes du hackathon afin de développer leurs services :
+  </div>
+
+  <!-- START THE FEATURETTES -->
+  <table class="table">
+    <thead>
+    <tr>
+      <th class="col-xs-3">Donnée</th>
+      <th>Organisme d'État</th>
+      <th>Status</th>
+      <th class="col-xs-2">Équipe</th>
+      <th>Utilisation des données</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="active">
+      <td rowspan="2">
+        Carrière complète <br /><span class="text-muted">(Dates, entreprises avec SIRET, métiers avec code ROME, lieux)</span>
+      </td>
+      <td rowspan="2">
+        CNAV, GIP Info-retraite, URSSAF
+      </td>
+      <td rowspan="2"><span class="label label-danger">Non disponible</span></td>
+      <td>
+        Les gardiens de la galaxie
+      </td>
+      <td>
+        Permettre à l'usager de découvrir des métiers et leurs formations associées en fonction de ses compétences acquises tout au long de son parcours professionnel.
+      </td>
+    </tr>
+    <tr class="active">
+      <td>
+        Futurs et moi
+      </td>
+      <td>
+        Permettre à l'usager de simuler et de comparer des scénarios de parcours professionnels futurs.
+      </td>
+    </tr>
+    <tr>
+      <td rowspan="3">
+        Formation <br /><span class="text-muted">(Droits DIF/CPF, localisation, coût, durée, descriptif, niveau de qualification, organismes et formateurs)</span>
+      </td>
+      <td rowspan="3">
+        Caisse des dépôts
+      </td>
+      <td rowspan="3"><span class="label label-danger">Non disponible</span></td>
+      <td>
+        ABBA
+      </td>
+      <td>
+        Permettre à l'usager de simuler le financement des formations en fonction de ses droits acquis.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Arc-en-ciel
+      </td>
+      <td>
+        Permettre à l'usager de trouver et comparer des formations correspond à son profil grâce à l'expérience de ses pairs (Plateforme de type réseau social)
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Futurs et moi
+      </td>
+      <td>
+        Permettre à l'usager de mettre en corrélation ses compétences et son parcours professionnel.
+      </td>
+    </tr>
+    <tr class="active">
+      <td>
+        Cotisations <br /><span class="text-muted">(ARE allocation de retour à l'emploi, ASS allocation de solidarité spécifique, RSA-socle, PA prime d'activité remplaçant le RSA-activité et la prime pour l'emploi, ASPA allocation de solidarité aux personnes âgées remplaçant le minimum vieillesse, APL allocation personnalisée au logement, bourse étudiante)</span>
+      </td>
+      <td>
+        CNAV, GIP Info-retraite, CAF, Pôle Emploi, Multiples organismes
+      </td>
+      <td><span class="label label-danger">Non disponible</span></td>
+      <td>
+        Futurs et moi
+      </td>
+      <td>
+        Permettre à l'usager de connaître ses droits sur la base de ses cotisations.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Service civique
+      </td>
+      <td>
+        Agence du Service Civique ?
+      </td>
+      <td><span class="label label-danger">Non disponible</span></td>
+      <td>
+        Unusual Working
+      </td>
+      <td>
+        Permettre à l'usager de valoriser son parcours bénévole au sein du CPA.
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <!-- /END THE FEATURETTES -->
+
+  <hr class="featurette-divider">
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Fait avec &hearts; au Hackathon CPA &middot; <a href="mailto:projet@cpa.api.gouv.fr">Contactez-nous</a></p>
+  </footer>
+
+
+</div><!-- /.container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"><\/script>')</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
