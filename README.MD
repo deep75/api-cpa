@@ -6,7 +6,7 @@ API CPA
 * Exemple de construction avec Dockerfile : `docker build -t mcas/api-cpa . ` puis 
                  `docker run -d --name api-cpa -p 80:3004 mcas/api-cpa `
 
-Dépendance
+Dépendances
 ----------
 
  * [NodeJS]
