@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ -z "$APP" ]; then
+    export APP=apps.json
+fi
+
+cd /usr/src/app
+pm2 start -x $APP --no-daemon
